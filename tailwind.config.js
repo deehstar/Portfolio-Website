@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'tiltneon':['"Tilt Neon"', 'sans-serif']
+        'tiltneon':['"Tilt Neon"', 'sans-serif'],
+        'syncopate':['Syncopate', 'sans-serif']
       }
     },
   },
