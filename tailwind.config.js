@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'tiltneon':['"Tilt Neon"', 'sans-serif']
+      }
+    },
   },
   plugins: [require("daisyui")],
 }
