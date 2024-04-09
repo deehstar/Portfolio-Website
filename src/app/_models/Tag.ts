@@ -8,7 +8,7 @@ export class Tag {
     static readonly JavaSpring = new Tag('Java Spring', 'springgreen');
     static readonly NODEJS = new Tag('Node.JS', 'brown');
 
-    private constructor(private readonly key: string, public readonly color: string) {
+    public constructor(private readonly key: string, public readonly color: string) {
 
     }
     toString() {
