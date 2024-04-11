@@ -1,0 +1,28 @@
+<!--<div class="shadow-xl min-h-full flex justify-center items-center text-black bg-white rounded-3xl font-syncopate">
+    <figure><img class="min-h-full" [src]="project?.picture" alt="{{ project?.name }}"/></figure>
+    <div class="card-body">
+      <h2 class="card-title">{{ project?.name }}</h2>
+      <p>{{ project?.summary }}</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-primary">Check it out</button>
+      </div>
+    </div>
+  </div>-->
+
+
+    <div class="card shadow-md min-h-full max-w-sm min-w-sm rounded-3xl bg-white font-syncopate">
+    <div class="card-body px-6 py-4">
+      <h5 class="card-title text-xl font-bold text-gray-600">{{ project?.name }}</h5>
+      <p class="card-text text-gray-700">{{ project?.summary }}.</p>
+      <button class="btn btn-primary">Check it out</button>
+    </div>
+    <div class="card-footer px-6 py-3 flex justify-center items-center">
+      <div class="flex flex-wrap justify-center gap-2">
+        <div *ngFor="let tag of project?.tags">
+          <div class="rounded-full px-2 py-0.5 {{tag.color}} text-black">{{tag}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
