@@ -12,9 +12,9 @@ export class ProjectsComponent implements OnInit{
   constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
-    this.projectService.projects$.subscribe(projects => {
-  this.projects = projects; // Assign fetched projects to the component's array
-});
+      this.projectService.projects$.subscribe(projects => {
+      this.projects = projects; // Assign fetched projects to the component's array
+    });
   }
 
 }
